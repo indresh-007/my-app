@@ -5,6 +5,7 @@ import Home from './Component/Home'
 import About from './Component/About';
 import Navbar from './Component/Navbar';
 import Page404 from './Component/Page404';
+import User from './Component/User';
 function App() {
   return (
     <div className="App">
@@ -14,7 +15,7 @@ function App() {
         <Route path="/" element={<Home />}/>
         <Route path="/about" element={<About />}/>
         {/* <Route path="/*" element={<Page404/>} /> */}
-
+        <Route path="/user/:name" element={<User />}/>
         <Route path="/*" element={<Navigate to="/" />} />
         </Routes> 
       </BrowserRouter>
