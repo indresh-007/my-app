@@ -1,12 +1,12 @@
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 
 function Navbar() {
     return(
     <div> 
-        <ul>
-            <li><Link to="/" >Home</Link></li>
-            <li><Link to="/about" >About</Link></li>
-            <li><Link to="/contact" >Contact</Link></li>
+        <ul className='navbar'>
+            <li><NavLink className="navbar-link" to="/" >Home</NavLink></li>
+            <li><NavLink className="navbar-link" to="/about" >About</NavLink></li>
+            <li><NavLink className="navbar-link" to="/contact" >Contact</NavLink></li>
             
         </ul>
     </div>
